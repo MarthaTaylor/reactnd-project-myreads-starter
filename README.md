@@ -1,15 +1,50 @@
-# MyReads Project
+# MyReads React FENDproject 
+---
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+## Table of Contents
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+- [Project Overview](#ProjectOverview)
+- [Built With](#BuiltWith)
+- [Installation](#Installation)
+- [What You're Getting](#WhatYou'reGetting)
+- [Backend Server](#BackendServer)
+- [Important](#important)
+- [External Code Used in this Project](#ExternalCodeUsedinthisProject)
+- [Credits and Acknowledgements](#creditsandacknowledgements)
+- [Contributing](#contributing)
+- [LICENSE](#LICENSE)
+- [Author](#Author)
 
-## TL;DR
 
-To get started developing right away:
+## Project Overview
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+A myreads book tracking and book organisation app built with React. The app allows the user to select and categorize books into 3 shelves 1: read 2:currently reading, or 3: want to read. Udacity provided an API server and client library that is used to present information as the user interacts with the application.
+
+## Built With
+
+Languages:
+
+React
+Create React App
+JavaScript ES6 & ES5
+HTML
+CSS
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+## Installation
+
+1. Fork and clone this repository to your local computer.
+2. Next you need to open GitBash
+3. Check if you have node.js installed run ```node -v``` if you do not have node download it as it has npm installed in it and you need npm 
+4. once you verify you have node.js installed cd into the project 
+5. To get started developing right away add the dependencies and start a server by
+
+* install all project dependencies with the command ```npm install```
+
+* start the development server with with the command ```npm start```
+
+6. With your server running, visit the site: `http://localhost:3000`, and enjoy interacting with the application
 
 ## What You're Getting
 ```bash
@@ -79,14 +114,33 @@ search(query)
 * These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
 
 ## Important
+
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
-## Create React App
+## External Code Used in this Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+Some Code reused or bits taken from the following sources:
+The starter code for this project comes from the following Udacity GitHub address of https://github.com/udacity/reactnd-project-myreads-starter repo and I forked and cloned it.
+From Maeva my classmates tutorial on youtube see https://www.youtube.com/watch? v=i6L2jLHV9j8 and help from my fellow student Daniela Kuester 
+who has being a contstat support.
+
+## Credits and Acknowledgements
+
+The Udacity course work and team, Maeva and the rest of my students who supported me along the way. Especially help from my fellow student Daniela Kuester who has being a contstat support. Thank you for all your help. 
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This repository is one of my projects as a Udacity student. Therefore, I most likely will not accept pull requests.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+For details, look at the file in his repo called [CONTRIBUTING.md](CONTRIBUTING.md) in this project repository.
+
+## License
+
+(c) Martha Taylor 2018.
+
+This repository is licensed under the [MIT license](https://choosealicense.com/licenses/mit/#). For further information see the [LICENSE.txt](LICENSE.txt) file in this project repository.
+
+## Author
+
+Martha Taylor
+
