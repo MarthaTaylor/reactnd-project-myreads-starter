@@ -6,6 +6,7 @@ import React, {Component} from 'react';
 * it display nothing so map would be able to work on it alternatively I could have used a ternary operator of: let anyThumbnail = this.props.book.imageLinks ? this.props.book.imageLinks.thumbnail : '';
 *  instead of the code if else below i choose not to as i think the if else is easier to read and teaching more with them both on display here 
 *  also display the relevant properties of the particular title and authors of the books and the default shelf the are on*/
+//value={this.props.currentShelf}
 class Book extends Component {
 
     render(){
@@ -26,18 +27,20 @@ class Book extends Component {
                         backgroundImage: `url("${anyThumbnail}")` }}></div>
                          
                          <div className="book-shelf-changer">
-                              <select                          
+                              <select                     
                                     onChange={ (event) => this.props.moveBookToThisShelf(
                                     this.props.book, event.target.value       
                                     )}
                                     value={this.props.currentShelf}
                                 >
                                     
-                                    <option value="move" disabled>Move to...</option>
+                                    <option value="move" disabled>Move to...</option> 
+                                    <option value="none"> None </option>                                
                                     <option value="currentlyReading">Currently Reading</option>
                                     <option value="wantToRead">Want to Read</option>
-                                    <option value="read"> Read </option>
-                                    <option value="none"> None </option>
+                                    <option value="read"> Read </option> 
+                                     
+                                                                      
                               </select>
                          </div>
 
