@@ -46,7 +46,7 @@ class BooksApp extends React.Component {
 //     })
 // }
 
-// ********instead of the above i used this it works better async with a promise*******************
+// ****instead of the above i used this it works better async with a promise, async requests should be handled with a promise*******************
 moveBookToThisShelf = (book, shelf) => {
   
   BooksAPI.update(book, shelf).then( BooksAPI.getAll().then( (books) => {
