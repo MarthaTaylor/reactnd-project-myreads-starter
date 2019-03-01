@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 
 /* Created the book component. It renders a lot info. If there is a thumbnail display it else just display empty/nothing as needed to tell 
-* it display nothing so map would be able to work on it alternatively I could have used a ternary operator of: let anyThumbnail = this.props.book.imageLinks ? this.props.book.imageLinks.thumbnail : '';
+*  it display nothing so map would be able to work on it alternatively I could have used a ternary operator of: let anyThumbnail = this.props.book.imageLinks ? this.props.book.imageLinks.thumbnail : '';
 *  instead of the code if else below i choose not to as i think the if else is easier to read and teaching more with them both on display here 
 *  also display the relevant properties of the particular title and authors of the books and the default shelf the are on*/
 //value={this.props.currentShelf}

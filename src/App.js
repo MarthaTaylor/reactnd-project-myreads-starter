@@ -32,15 +32,28 @@ class BooksApp extends React.Component {
         })
   }
 
+//old code that didn't allow books to change shelf straight/smooth as i hadn't used a promise with the getAll()
+// see direct below for updated code that works alot better 
+//  //here I use the getAll() method already provided by udacity to get the data of books from BookAPI in the backend 
+//  //i will use it here to enable the app to move books between shelves
+// moveBookToThisShelf = (book, shelf) => {
 
- // here I use the getAll() method already provided by udacity to get the data of books from BookAPI in the backend i will use it here to enable the app to move books between shelves
+//   BooksAPI.update(book, shelf);
+//    // can put below in to a unique method and call that method both here and in componentDidMount() method
+//    BooksAPI.getAll().then( (books) => {
+//    // if you do not update the state the page won't refresh and update by itself, here I use setState() to update the state
+//    this.setState({books})
+//     })
+// }
+
+// ********instead of the above i used this it works better async with a promise*******************
 moveBookToThisShelf = (book, shelf) => {
-  BooksAPI.update(book, shelf);
-   // can put below in to a unique method and call that method both here and in componentDidMount() method
-   BooksAPI.getAll().then( (books) => {
-   // if you do not update the state the page won't refresh and update by itself, here I use setState() to update the state
+  
+  BooksAPI.update(book, shelf).then( BooksAPI.getAll().then( (books) => {
+  
    this.setState({books})
-    })
+    }))
+  
 }
 
    /* Route is inside render() on both pages browser router was enable in index.js for this parent App.js file
